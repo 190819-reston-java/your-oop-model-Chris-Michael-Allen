@@ -15,6 +15,11 @@ public abstract class skeletonAbstract implements citadelCity {
 		this.carefulness = 10;
 	}
 	
+	skeletonAbstract(){
+		this.name = "Skeleton Jelly";
+		this.carefulness = 10;
+	}
+	
 	public static int getCarefulness() {
 		return carefulness;
 	}

@@ -18,6 +18,9 @@ public class skeletonJellyAdventure {
 		squirxicalJelly thirdJelly = new squirxicalJelly("Skeleton Jelly", 600);
 		thirdJelly.isCareful();
 
+		skeletonJellyFlock newFlock = new skeletonJellyFlock();
+		
+		newFlock.releaseTheFlock();
 	}
 
 }

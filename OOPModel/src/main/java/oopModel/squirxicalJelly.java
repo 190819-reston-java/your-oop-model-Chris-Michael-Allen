@@ -11,6 +11,10 @@ public class squirxicalJelly extends skeletonJelly {
 		super(name);
 	}
 	
+	squirxicalJelly(){
+		super();
+	}
+	
 	public void Speak() {
 		System.out.println("I am Squirxical Jelly");
 		this.setCarefulness(this.getCarefulness() + 1);

@@ -10,6 +10,10 @@ public class skeletonJelly extends skeletonAbstract {
 	skeletonJelly(String name){
 		super(name);
 	}
+	
+	skeletonJelly(){
+		super();
+	}
 
 	public void Speak() {
 		System.out.println("I am Skeleton Jelly");
