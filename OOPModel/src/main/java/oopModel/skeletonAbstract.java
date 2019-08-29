@@ -2,29 +2,34 @@ package oopModel;
 
 public abstract class skeletonAbstract implements citadelCity {
 
-	protected static int carefulness;
+	protected int carefulness;
 	protected static String name;
 	
-	skeletonAbstract(String name, int carefulness){
-		this.name = name;
-		this.carefulness = carefulness;
+	skeletonAbstract(String new_name, int carefulness){
+		name = new_name;
+		this.setCarefulness(carefulness);
 	}
 	
-	skeletonAbstract(String name){
-		this.name = name;
-		this.carefulness = 10;
+	skeletonAbstract(String new_name){
+		name = new_name;
+		this.setCarefulness(10);
 	}
 	
 	skeletonAbstract(){
-		this.name = "Skeleton Jelly";
-		this.carefulness = 10;
+		name = "Skeleton Jelly";
+		this.setCarefulness(10);
 	}
 	
-	public static int getCarefulness() {
+	public int getCarefulness() {
 		return carefulness;
 	}
 	
-	public void setCarefulness(int carefulness) {
+	public void setCarefulness(int carefulness) throws TooCarefulException {
+		if (carefulness > 50) {
+			throw new TooCarefulException();
+		}
 		this.carefulness = carefulness;
 	}
+	
+
 }
